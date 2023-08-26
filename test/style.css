@@ -1,0 +1,147 @@
+/* Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Mulish&family=Rubik&family=Source+Code+Pro&display=swap");
+
+/* General */
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: rgb(92, 92, 92);
+}
+
+/* Media */
+
+/* Nav-Bar */
+
+.nav-bar-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+.nav-bar {
+    width: 30%;
+    position: relative;
+    background-color: rgb(245, 119, 1);
+    height: 50px;
+    border-radius: 25px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+}
+.nav-item {
+    margin: auto 30px;
+    display: flex;
+    justify-content: center;
+}
+.nav-item-img {
+    margin: auto;
+}
+.nav-item:hover {
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(245, 119, 1);
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    font-family: "Rubik";
+}
+section {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+#excludeme-intro {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-bottom: -200px;
+}
+#excludeme-showcase {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Card */
+
+.card {
+    height: 250px;
+    width: 300px;
+    position: relative;
+    margin: 40px;
+    align-self: center;
+    background-color: rgb(114, 114, 114);
+    border-radius: 15px;
+}
+.card-top {
+    position: relative;
+    margin: 30px;
+    display: flex;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.card-icon-container {
+    display: flex;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+}
+.card-title {
+    position: relative;
+    font-size: 28px;
+    margin-left: 20px;
+    font-family: "Rubik";
+    color: rgb(245, 119, 1);
+}
+.card-description {
+    margin: 10px 30px 10px 30px;
+    font-size: 20px;
+    font-family: "Rubik";
+}
+
+/* Intro */
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 300px auto;
+}
+.name {
+    font-size: 190px;
+    font-family: "Rubik";
+    color: rgb(245, 119, 1);
+    margin-left: 10px;
+}
+.button {
+    background-color: rgb(245, 119, 1);
+    width: 200px;
+    height: 100px;
+    font-size: 40px;
+    font-family: "Rubik";
+    border: none;
+    border-radius: 30px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover {
+    cursor: pointer;
+}

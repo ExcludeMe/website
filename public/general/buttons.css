@@ -16,6 +16,8 @@
     position: relative;
     height: 2.8em;
     padding-right: 3.3em;
+    font-family: "Rubik";
+    margin: auto;
 }
 
 .cssbuttons-io-button .icon {
@@ -49,4 +51,7 @@
 
 .cssbuttons-io-button:active .icon {
     transform: scale(0.95);
+}
+.cssbuttons-io-button:hover {
+    cursor: pointer;
 }

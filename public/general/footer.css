@@ -1,0 +1,8 @@
+footer {
+    background-color: rgb(245, 119, 1);
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    font-family: "Rubik";
+}

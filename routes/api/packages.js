@@ -59,6 +59,7 @@ router.post("/new", (req, res) => {
 router.delete("/delete?id=:id/user=:user", (req, res) => {
     let all = fs.readJsonSync("../../data/all.json");
     let packages = fs.readJsonSync("../../data/packages.json");
+    let users = fs.readJsonSync("../../data/users.json");
     if (!!packages[req.params.id]) {
         if (packages[req.params.id].creator === req.params.user) {
             delete packages[req.params.id];
@@ -66,6 +67,11 @@ router.delete("/delete?id=:id/user=:user", (req, res) => {
                 spaces: 4,
             });
             delete all[req.params.id];
+            delete all[packages[req.params.id].creator].packages[req.params.id];
+            delete users[packages[req.params.id].creator].packages[
+                req.params.id
+            ];
+            fs.writeJsonSync("../../data/users.json", users, { spaces: 4 });
             fs.writeJsonSync("../../data/all.json", all, { spaces: 4 });
             res.status(200).json({
                 message: "Success",

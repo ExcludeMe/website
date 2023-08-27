@@ -28,7 +28,7 @@
     height: 2.2em;
     width: 2.2em;
     border-radius: 0.7em;
-    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em rgb(245, 119, 1);
     right: 0.3em;
     transition: all 0.3s;
 }
@@ -40,7 +40,7 @@
 .cssbuttons-io-button .icon svg {
     width: 1.1em;
     transition: transform 0.3s;
-    color: #7b52b9;
+    color: rgb(245, 119, 1);
 }
 
 .cssbuttons-io-button:hover .icon svg {

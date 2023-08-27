@@ -31,3 +31,8 @@ const PACKAGES = require("./routes/api/packages");
 app.use("/api/packages", PACKAGES);
 const USERS = require("./routes/api/users");
 app.use("/api/users", USERS);
+
+// Pages
+
+const PAGES = require("./routes/pages");
+app.use("/", PAGES);

@@ -1,0 +1,46 @@
+/* Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Mulish&family=Rubik&family=Source+Code+Pro&display=swap");
+
+/* General */
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: rgb(92, 92, 92);
+}
+
+/* Media */
+
+/* Sections */
+
+.content-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-container {
+  width: 400px;
+  position: relative;
+  justify-content: center;
+}
+
+/* Sign In */
+
+.title {
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 100px;
+  color: rgb(245, 119, 1);
+}
+.input-error {
+  font-size: 20px;
+  font-family: "Rubik";
+  text-align: center;
+  margin: 10px auto;
+  color: rgb(245, 119, 1);
+}
